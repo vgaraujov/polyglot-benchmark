@@ -20,7 +20,6 @@ All exercises in this repository are sourced from the following Exercism languag
 
 All exercise content is copyright © [Exercism](https://exercism.org). These exercises are used in accordance with Exercism's open source licenses.
 
-Please visit [Exercism](https://exercism.org) to:
-- Try these exercises in their original form
-- Get mentoring from their community
-- Support their mission of free coding education
+Please visit [Exercism](https://exercism.org) or the
+repos above to see licensing of these coding
+exercises.
