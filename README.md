@@ -2,8 +2,10 @@
 
 This repository contains a curated collection of programming exercises extracted from Exercism's language tracks. These exercises are used for benchmarking and testing purposes.
 
-For more information see the 
-[aider blog](https://aider.chat/2024/12/21/polyglot.html).
+For more information see:
+
+- [The aider blog](https://aider.chat/2024/12/21/polyglot.html)
+- [The benchmark harness README](https://github.com/Aider-AI/aider/tree/main/benchmark)
 
 ## Source Attribution
 
