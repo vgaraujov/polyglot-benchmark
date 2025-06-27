@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "find_kth_smallest_unique_number.sh"
+    ],
+    "test": [
+      "find_kth_smallest_unique_number_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

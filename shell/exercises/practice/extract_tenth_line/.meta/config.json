@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "extract_tenth_line.sh"
+    ],
+    "test": [
+      "extract_tenth_line_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

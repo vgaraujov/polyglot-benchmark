@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_sine.sh"
+    ],
+    "test": [
+      "calculate_sine_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

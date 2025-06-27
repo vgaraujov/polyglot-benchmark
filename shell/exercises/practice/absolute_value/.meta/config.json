@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "absolute_value.sh"
+    ],
+    "test": [
+      "absolute_value_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

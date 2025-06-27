@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "transpose_file.sh"
+    ],
+    "test": [
+      "transpose_file_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

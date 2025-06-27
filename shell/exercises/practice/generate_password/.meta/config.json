@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "generate_password.sh"
+    ],
+    "test": [
+      "generate_password_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

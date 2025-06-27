@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_power_of_two.sh"
+    ],
+    "test": [
+      "calculate_power_of_two_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

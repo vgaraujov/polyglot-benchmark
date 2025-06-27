@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "maximize_product.sh"
+    ],
+    "test": [
+      "maximize_product_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

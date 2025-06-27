@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "convert_bases.sh"
+    ],
+    "test": [
+      "convert_bases_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "evaluate_hand.sh"
+    ],
+    "test": [
+      "evaluate_hand_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

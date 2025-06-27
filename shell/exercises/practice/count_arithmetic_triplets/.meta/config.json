@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "count_arithmetic_triplets.sh"
+    ],
+    "test": [
+      "count_arithmetic_triplets_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

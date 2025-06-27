@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "third_largest_number.sh"
+    ],
+    "test": [
+      "third_largest_number_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

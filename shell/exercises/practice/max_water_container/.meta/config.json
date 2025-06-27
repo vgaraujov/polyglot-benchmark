@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "max_water_container.sh"
+    ],
+    "test": [
+      "max_water_container_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

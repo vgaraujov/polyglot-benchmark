@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "merge_items.sh"
+    ],
+    "test": [
+      "merge_items_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

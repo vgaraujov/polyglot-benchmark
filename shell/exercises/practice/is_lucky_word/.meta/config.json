@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "is_lucky_word.sh"
+    ],
+    "test": [
+      "is_lucky_word_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

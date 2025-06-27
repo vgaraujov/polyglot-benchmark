@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "check_lottery_winnings.sh"
+    ],
+    "test": [
+      "check_lottery_winnings_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

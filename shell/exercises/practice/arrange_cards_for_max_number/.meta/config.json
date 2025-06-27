@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "arrange_cards_for_max_number.sh"
+    ],
+    "test": [
+      "arrange_cards_for_max_number_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "reverse_number.sh"
+    ],
+    "test": [
+      "reverse_number_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

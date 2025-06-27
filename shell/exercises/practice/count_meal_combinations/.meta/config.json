@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "count_meal_combinations.sh"
+    ],
+    "test": [
+      "count_meal_combinations_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

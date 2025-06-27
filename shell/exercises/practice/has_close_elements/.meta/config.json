@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "has_close_elements.sh"
+    ],
+    "test": [
+      "has_close_elements_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

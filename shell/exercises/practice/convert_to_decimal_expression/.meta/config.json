@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "convert_to_decimal_expression.sh"
+    ],
+    "test": [
+      "convert_to_decimal_expression_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

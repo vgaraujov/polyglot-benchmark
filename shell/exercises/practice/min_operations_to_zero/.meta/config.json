@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "min_operations_to_zero.sh"
+    ],
+    "test": [
+      "min_operations_to_zero_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

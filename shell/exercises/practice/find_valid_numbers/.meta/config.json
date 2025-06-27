@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "find_valid_numbers.sh"
+    ],
+    "test": [
+      "find_valid_numbers_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

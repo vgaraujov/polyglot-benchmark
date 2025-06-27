@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "print_ascii_code.sh"
+    ],
+    "test": [
+      "print_ascii_code_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

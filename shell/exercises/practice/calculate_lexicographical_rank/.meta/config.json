@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_lexicographical_rank.sh"
+    ],
+    "test": [
+      "calculate_lexicographical_rank_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

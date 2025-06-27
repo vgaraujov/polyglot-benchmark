@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Transpose the content of file.txt
+# example
+# input:1 2 3\n4 5 6\n7 8 9
+# output:1 4 7\n2 5 8\n3 6 9
+transpose_file() {
+awk '
+{
+for (i = 1; i <= NF; i++) {
+if(NR == 1) {
+transposed[i] = $i;
+} else {
+transposed[i] = transposed[i] " " $i;
+}
+}
+}
+END {
+for (i = 1; i <= NF; i++) {
+print transposed[i];
+}
+}' file.txt
+}

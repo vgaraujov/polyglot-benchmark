@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_tax.sh"
+    ],
+    "test": [
+      "calculate_tax_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

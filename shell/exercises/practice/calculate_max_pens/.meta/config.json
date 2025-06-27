@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_max_pens.sh"
+    ],
+    "test": [
+      "calculate_max_pens_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "int_to_bool_to_int.sh"
+    ],
+    "test": [
+      "int_to_bool_to_int_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

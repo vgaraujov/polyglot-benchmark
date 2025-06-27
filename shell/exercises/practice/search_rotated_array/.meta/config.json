@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "search_rotated_array.sh"
+    ],
+    "test": [
+      "search_rotated_array_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

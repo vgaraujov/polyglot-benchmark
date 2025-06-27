@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_minimum_cost.sh"
+    ],
+    "test": [
+      "calculate_minimum_cost_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "is_valid_sudoku.sh"
+    ],
+    "test": [
+      "is_valid_sudoku_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "generate_max_local.sh"
+    ],
+    "test": [
+      "generate_max_local_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "count_digit_occurrences.sh"
+    ],
+    "test": [
+      "count_digit_occurrences_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

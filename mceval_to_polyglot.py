@@ -2,6 +2,7 @@
 import os
 import argparse
 import pandas as pd
+import json
 from datasets import load_dataset
 
 # Custom solutions for problematic tasks
@@ -434,51 +435,74 @@ def main(include_solutions=False):
             docs_dir = os.path.join(task_dir, ".docs")
             os.makedirs(docs_dir, exist_ok=True)
             
-            # If it's one of our custom-fixed tasks and solutions should be included
-            if include_solutions and task_name in CUSTOM_SOLUTIONS:
+            # Create .meta directory
+            meta_dir = os.path.join(task_dir, ".meta")
+            os.makedirs(meta_dir, exist_ok=True)
+            
+            # Create config.json file
+            config_data = {
+                "authors": ["mceval"],
+                "contributors": ["vgaraujov"],
+                "files": {
+                    "solution": [f"{task_name}.sh"],
+                    "test": [f"{task_name}_test.sh"],
+                    "example": [".meta/example.sh"]
+                }
+            }
+            
+            with open(os.path.join(meta_dir, "config.json"), "w") as f:
+                json.dump(config_data, f, indent=2)
+            
+            # Ensure shell scripts have execute permission
+            prompt_with_shebang = prompt
+            if not prompt.startswith('#!/'):
+                prompt_with_shebang = '#!/bin/bash\n\n' + prompt
+
+            # Write task files
+            with open(os.path.join(task_dir, f"{task_name}.sh"), "w") as f:
+                f.write(prompt_with_shebang)
+
+            # then we add the solution to the prompt for example.sh
+            # If it's one of our custom-fixed tasks
+            if task_name in CUSTOM_SOLUTIONS:
                 # Use our custom solution directly
                 prompt_with_shebang = CUSTOM_SOLUTIONS[task_name]
-            else:
-                # Ensure shell scripts have execute permission
-                prompt_with_shebang = prompt
-                if not prompt.startswith('#!/'):
-                    prompt_with_shebang = '#!/bin/bash\n\n' + prompt
-                    
+            else:   
                 # If including solutions, append the solution to the prompt
-                if include_solutions and has_solutions and not pd.isna(row.get('canonical_solution')):
-                    solution = row['canonical_solution']
+                # if include_solutions and has_solutions and not pd.isna(row.get('canonical_solution')):
+                solution = row['canonical_solution']
+                
+                # Make sure the solution is properly formatted
+                if solution.strip() and not solution.strip().endswith('}'):
+                    solution = solution.rstrip() + '\n}'
+                
+                # Simply append the solution to the prompt
+                if '}' not in prompt_with_shebang:  # Check if function is not closed
+                    # Check if the last line of prompt ends with '{' followed by content without newline
+                    lines = prompt_with_shebang.strip().split('\n')
+                    last_line = lines[-1].strip()
                     
-                    # Make sure the solution is properly formatted
-                    if solution.strip() and not solution.strip().endswith('}'):
-                        solution = solution.rstrip() + '\n}'
-                    
-                    # Simply append the solution to the prompt
-                    if '}' not in prompt_with_shebang:  # Check if function is not closed
-                        # Check if the last line of prompt ends with '{' followed by content without newline
-                        lines = prompt_with_shebang.strip().split('\n')
-                        last_line = lines[-1].strip()
-                        
-                        # Check if solution starts with local var declaration that should be on a newline
-                        if last_line.endswith('{'):
-                            # Function signature ends with {, just add a newline
-                            prompt_with_shebang += '\n' + solution
-                        elif 'local' in solution.strip().split()[0]:
-                            # Add a newline to separate local declaration
-                            prompt_with_shebang += '\n' + solution
-                        else:
-                            # Generic case - ensure there's proper spacing
-                            prompt_with_shebang = prompt_with_shebang.rstrip() + '\n' + solution.lstrip()
-                    
-                    # Make sure function is properly closed and doesn't have double closing braces
-                    if not prompt_with_shebang.strip().endswith('}'):
-                        prompt_with_shebang += '\n}'
+                    # Check if solution starts with local var declaration that should be on a newline
+                    if last_line.endswith('{'):
+                        # Function signature ends with {, just add a newline
+                        prompt_with_shebang += '\n' + solution
+                    elif 'local' in solution.strip().split()[0]:
+                        # Add a newline to separate local declaration
+                        prompt_with_shebang += '\n' + solution
                     else:
-                        # Make sure we don't have double closing braces
-                        count_braces = prompt_with_shebang.count('}')
-                        count_open_braces = prompt_with_shebang.count('{')
-                        if count_braces > count_open_braces:
-                            # Fix by removing the last brace and adding it back properly
-                            prompt_with_shebang = prompt_with_shebang.rstrip().rstrip('}') + '\n}'
+                        # Generic case - ensure there's proper spacing
+                        prompt_with_shebang = prompt_with_shebang.rstrip() + '\n' + solution.lstrip()
+                
+                # Make sure function is properly closed and doesn't have double closing braces
+                if not prompt_with_shebang.strip().endswith('}'):
+                    prompt_with_shebang += '\n}'
+                else:
+                    # Make sure we don't have double closing braces
+                    count_braces = prompt_with_shebang.count('}')
+                    count_open_braces = prompt_with_shebang.count('{')
+                    if count_braces > count_open_braces:
+                        # Fix by removing the last brace and adding it back properly
+                        prompt_with_shebang = prompt_with_shebang.rstrip().rstrip('}') + '\n}'
                 
             # Make sure test script loads the function definitions
             test_with_shebang = test
@@ -492,8 +516,13 @@ def main(include_solutions=False):
                 else:
                     test_with_shebang = f'{lines[0]}\n\n# Load the function definitions\n. ./{task_name}.sh\n\n'
             
-            # Write task files
-            with open(os.path.join(task_dir, f"{task_name}.sh"), "w") as f:
+            # overwrite task files if solutions are included
+            if include_solutions:
+                with open(os.path.join(task_dir, f"{task_name}.sh"), "w") as f:
+                    f.write(prompt_with_shebang)
+            
+            # Create example.sh with solution in .meta directory (always includes solution)
+            with open(os.path.join(meta_dir, "example.sh"), "w") as f:
                 f.write(prompt_with_shebang)
             
             with open(os.path.join(task_dir, f"{task_name}_test.sh"), "w") as f:

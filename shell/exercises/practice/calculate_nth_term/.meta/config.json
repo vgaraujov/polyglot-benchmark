@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "calculate_nth_term.sh"
+    ],
+    "test": [
+      "calculate_nth_term_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

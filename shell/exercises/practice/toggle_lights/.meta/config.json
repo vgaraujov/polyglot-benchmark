@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "toggle_lights.sh"
+    ],
+    "test": [
+      "toggle_lights_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

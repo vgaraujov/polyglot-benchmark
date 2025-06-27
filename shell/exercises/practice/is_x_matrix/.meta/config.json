@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "is_x_matrix.sh"
+    ],
+    "test": [
+      "is_x_matrix_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

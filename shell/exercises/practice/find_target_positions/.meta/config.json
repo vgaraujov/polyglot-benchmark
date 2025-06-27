@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "find_target_positions.sh"
+    ],
+    "test": [
+      "find_target_positions_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "check_sign.sh"
+    ],
+    "test": [
+      "check_sign_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}

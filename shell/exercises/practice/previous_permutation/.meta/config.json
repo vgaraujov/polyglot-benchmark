@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "mceval"
+  ],
+  "contributors": [
+    "vgaraujov"
+  ],
+  "files": {
+    "solution": [
+      "previous_permutation.sh"
+    ],
+    "test": [
+      "previous_permutation_test.sh"
+    ],
+    "example": [
+      ".meta/example.sh"
+    ]
+  }
+}
